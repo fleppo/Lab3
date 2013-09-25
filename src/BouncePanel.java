@@ -1,4 +1,3 @@
-package boll;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -15,7 +14,6 @@ public class BouncePanel extends JPanel implements ActionListener,
 MouseMotionListener {
 
 	private int width = 270, height = 360;
-	private Ball[] theBall;
 	private Rectangle pad; // The to bounce of the ball
 	private Timer timer;
 
@@ -25,7 +23,7 @@ MouseMotionListener {
 	public BouncePanel() {
 		this.setPreferredSize(new Dimension(width, height));
 		this.setBackground(Color.lightGray);
-
+		/*
 		Random rand = new Random();
 		theBall = new Ball[3];
 
@@ -36,7 +34,7 @@ MouseMotionListener {
 			double y = rand.nextDouble()+1;
 			theBall[i] = new Ball(0, 0, 5, color[c]);
 			theBall[i].setVelocity(x, -y);	// Hastighet
-		}
+		}*/
 
 		// Create the pad
 		pad = new Rectangle(width / 2, height - 40, 40, 5);
@@ -58,7 +56,7 @@ MouseMotionListener {
 */
 
 	public void actionPerformed(ActionEvent event) {
-		for(int i = 0; i < theBall.length; i++)
+		/*for(int i = 0; i < theBall.length; i++)
 		{
 			// Is the ball outside the panel?
 			constrainBall(theBall[i]);
@@ -74,7 +72,7 @@ MouseMotionListener {
 				timer.stop();
 				JOptionPane.showMessageDialog(this, "End of Game!");
 			}
-		}
+		}*/
 		
 	
 	}
@@ -90,10 +88,11 @@ MouseMotionListener {
 		g.fillRect(pad.x, pad.y, pad.width, pad.height);
 
 		// The ball
+		/*
 		for(int i = 0; i < theBall.length; i++)
 		{
 			theBall[i].paint(g);
-		}
+		}*/
 	}
 
 /**
@@ -120,6 +119,8 @@ MouseMotionListener {
 * Check if the ball collides with the pads upper edge. If so, bounce the
 * ball vertically.
 */
+	//TA IN ANDRA OBJEKT HÄR! INTE BALL!
+	/*
 	private void checkForCollisionWithPad(Ball ball) {
 		double radius = ball.getRadius();
 		double x1 = ball.getX(), y1 = ball.getY();
@@ -137,10 +138,13 @@ MouseMotionListener {
 
 		
 	}
+	*/
 
 /**
 * Keep the ball inside the panel/canvas
 */
+	//TA IN ANDRA OBJEKT HÄR! INTE BALL!
+	/*
 	private void constrainBall(Ball ball) {
 		double x = ball.getX(), y = ball.getY();
 		double dx = ball.getDx(), dy = ball.getDy();
@@ -158,6 +162,7 @@ MouseMotionListener {
 
 		ball.setVelocity(dx, dy);
 	}
+	*/
 
 	private static final long serialVersionUID = 1L;
 }
