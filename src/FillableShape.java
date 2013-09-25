@@ -5,7 +5,7 @@ public abstract class FillableShape extends Shape {
 	
 	public FillableShape()
 	{
-		
+		//HEJ
 	}
 	
 	public boolean getFilled()
