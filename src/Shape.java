@@ -12,7 +12,7 @@ public abstract class Shape {
  
  public Shape()
  {
-	//d 
+	//So whats up ? 
  }
  
  public double getX()
