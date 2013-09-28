@@ -11,9 +11,12 @@ public abstract class Shape {
  private Color color;
  private Rectangle box;
  
- public Shape()
+ public Shape(double x, double y, Color color)
  {
 	//So whats up ? 
+	this.x = x; 
+	this.y = y;
+	this.color = color;
  }
  
  public double getX()
