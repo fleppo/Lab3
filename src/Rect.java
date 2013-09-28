@@ -12,7 +12,7 @@ public class Rect extends FillableShape{
 	
 	public Rect(double x, double y, double width, double height, Color color)
 	{
-		super(x,y, color);
+		super(x, y, color);
 		this.x = x;
 		this.y = y;
 		this.width = width;
@@ -33,7 +33,7 @@ public class Rect extends FillableShape{
 	public void paint(Graphics g)
 	{
 		g.setColor(color);
-		g.drawRect((int) x, (int) y, (int) width, (int) height);
+		//g.drawRect((int) x, (int) y, (int) width, (int) height);
 		g.fillRect((int) x, (int) y, (int) width, (int) height);
 	}
 }
