@@ -5,7 +5,7 @@ public abstract class FillableShape extends Shape {
 	
 	private boolean filled;
 	
-	public FillableShape(double x, double y, double x2, double y2, Color color)
+	public FillableShape(double x, double y, Color color)
 	{
 		//HEJ
 		super(x, y, color);
