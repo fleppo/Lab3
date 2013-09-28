@@ -3,7 +3,7 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 
 
-public abstract class Shape {
+abstract public class Shape {
  private double x;
  private double y;
  private double dy;
@@ -11,7 +11,7 @@ public abstract class Shape {
  private Color color;
  private Rectangle box;
  
- public Shape(double x, double y, Color color)
+ protected Shape(double x, double y, Color color)
  {
 	//So whats up ? 
 	this.x = x; 

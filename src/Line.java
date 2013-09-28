@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.Graphics;
 
 
@@ -6,9 +7,9 @@ public class Line extends Shape{
 	private double x2;
 	private double y2;
 	
-	public Line()
+	public Line(double x, double y, double x2, double y2, Color color)
 	{
-		
+		super(x, y, color);
 	}
 	
 	public double getX2()
