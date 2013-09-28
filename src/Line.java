@@ -33,6 +33,5 @@ public class Line extends Shape{
 	public void paint(Graphics g)
 	{
 		g.setColor(lineColor);
-		g.fillRect((int)x, (int)y, (int)x2,(int) y2);
 	}
 }
