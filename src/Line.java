@@ -1,7 +1,10 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7a7d9d7a1f2bda7fbf81ea571efb9eeb1838f4e3
 
 public class Line extends Shape{
 
@@ -14,9 +17,9 @@ public class Line extends Shape{
 	public Line(double x, double y, double x2, double y2, Color color)
 	{
 		super(x, y, color);
-		this.x2=x2;
-		this.y2=y2;
-		this.lineColor=color;
+		this.x2 = x2;
+		this.y2 = y2;
+		this.lineColor = color;
 	}
 	
 	public double getX2()
