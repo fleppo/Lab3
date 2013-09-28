@@ -1,10 +1,6 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7a7d9d7a1f2bda7fbf81ea571efb9eeb1838f4e3
 
 public class Line extends Shape{
 
@@ -36,5 +32,6 @@ public class Line extends Shape{
 	public void paint(Graphics g)
 	{
 		g.setColor(lineColor);
+		g.fillRect((int) x, (int) y, (int) x2, (int) y2);
 	}
 }
