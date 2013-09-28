@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.Rectangle;
 
 
@@ -52,13 +53,23 @@ public abstract class Shape {
  
  public void move()
  {
-	 
+	 x += dx; 
+	 y += dy;
+	constrain();  
  }
  
  protected void constrain()
  {
-	 
+	double x0 = box.x, y0 = box.y;
+	double x1 = x0 + box.width;
+	double y1 = y0 + box.height;
+	
+	// If outside box, change direction
+	if(x < x0) dx = Math.abs(dx);
+	if(x > x1) dx = -Math.abs(dx);
+	if(y < y0) dy = Math.abs(dy);
+	if(y > y1) dy = -Math.abs(dy);
  }
  
- abstract public void paint();
+ abstract public void paint(Graphics g);
 }

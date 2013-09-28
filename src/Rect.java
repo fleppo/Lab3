@@ -1,3 +1,5 @@
+import java.awt.Graphics;
+
 
 public class Rect extends FillableShape{
 
@@ -19,7 +21,7 @@ public class Rect extends FillableShape{
 		return height;
 	}
 	
-	public void paint()
+	public void paint(Graphics g)
 	{
 		
 	}

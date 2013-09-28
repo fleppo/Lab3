@@ -1,3 +1,5 @@
+import java.awt.Graphics;
+
 
 public class Line extends Shape{
 
@@ -20,7 +22,7 @@ public class Line extends Shape{
 	}
 	
 	@Override
-	public void paint()
+	public void paint(Graphics g)
 	{
 		
 	}

@@ -1,3 +1,5 @@
+import java.awt.Graphics;
+
 
 public class Circle extends FillableShape{
 
@@ -12,7 +14,7 @@ public class Circle extends FillableShape{
 		return diameter;
 	}
 	
-	public void paint()
+	public void paint(Graphics g)
 	{
 		
 	}
